@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Student Name: Aiko Bislig - Student #: 301435476 -->
+        <title>COMP213 - W24 - Web Interface Design - Assignment 4</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assignment4.css">
+    </head>
+    <body>
+        <header>
+            <img class="header_logo" src="centennial_logo.png" alt="Centennial College Logo">
+        </header>
+        <div class="container">
+            <div id="header_form">
+                <h1>Centennial College</h1>
+                <h2>Continuing Education Course/ Instructor Evaluation</h2>
+            </div>
+            <p>Please read each statement carefully and consider each one individually. Give only <b>one answer</b> for each question.</p>
+            <form name="course_form" id="course_form" method="post" 
+                action="mailto:email@email.com">
+                <label class="upper_label" for="course_name">Course Name/Code:</label>
+                <input type="text" name="course_name" id="course_name" required placeholder="Enter Course Name or Course Code">
+                <label class="upper_label" for="semester">Semester:</label>
+                <select name="semester" id="semester" size="1" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter">Winter</option>
+                    <option value="Spring/Summer">Spring/Summer</option>
+                </select>        
+                <label class="upper_label" for="year">Year:</label>
+                <input type="text" name="year" id="year" required placeholder="####">
+                <label class="upper_label" for="instructor">Instructor:</label>
+                <input type="text" name="instructor" id="instructor" required placeholder="Instructor's Full Name">
+                <h3>Instructor</h3>
+                <p class="p_instructor">How would you rate the instructor's?</p>
+                <ol>
+                    <li>
+                        <p><b>Knowledge</b> of the subject?</p>
+                        <input type="radio" name="knowledge" id="instructor_knowledgeE"  value="Instructor Knowledge Excellent">
+                        <label for="instructor_knowledgeE">Excellent</label>
+                        <input type="radio" name="knowledge" id="instructor_knowledgeG"  value="Instructor Knowledge Good">
+                        <label for="instructor_knowledgeG">Good</label>
+                        <input type="radio" name="knowledge" id="instructor_knowledgeF"  value="Instructor Knowledge Fair">
+                        <label for="instructor_knowledgeF">Fair</label>
+                        <input type="radio" name="knowledge" id="instructor_knowledgeNS"  value="Instructor Knowledge Not Satisfactory">
+                        <label for="instructor_knowledgeNS">Not Satisfactory</label>
+                    </li>
+                    <li>
+                        <p><b>Helpfulness</b>?</p>
+                        <input type="radio" name="help" id="instructor_helpE"  value="Instructor Helpfulness Excellent">
+                        <label for="instructor_helpE">Excellent</label>
+                        <input type="radio" name="help" id="instructor_helpG"  value="Instructor Helpfulness Good">
+                        <label for="instructor_helpG">Good</label>
+                        <input type="radio" name="help" id="instructor_helpF"  value="Instructor Helpfulness Fair">
+                        <label for="instructor_helpF">Fair</label>
+                        <input type="radio" name="help" id="instructor_helpNS"  value="Instructor Helpfulness Not Satisfactory">
+                        <label for="instructor_helpNS">Not Satisfactory</label>
+                    </li>
+                    <li>
+                        <p><b>Courtesy and respect</b> for all students?</p>
+                        <input type="radio" name="courtesy_respect" id="instructor_courtesyE"  value="Instructor Courtesy and Respect Excellent">
+                        <label for="instructor_courtesyE">Excellent</label>
+                        <input type="radio" name="courtesy_respect" id="instructor_courtesyG"  value="Instructor Instructor Courtesy and Respect Good">
+                        <label for="instructor_courtesyG">Good</label>
+                        <input type="radio" name="courtesy_respect" id="instructor_courtesyF"  value="Instructor Instructor Courtesy and Respect Fair">
+                        <label for="instructor_courtesyF">Fair</label>
+                        <input type="radio" name="courtesy_respect" id="instructor_courtesyNS"  value="Instructor Instructor Courtesy and Respect Not Satisfactory">
+                        <label for="instructor_courtesyNS">Not Satisfactory</label>
+                    </li>
+                    <li>
+                        <p><b>Communication</b> skills?</p>
+                        <input type="radio" name="communication" id="instructor_communicationE"  value="Instructor Communication Excellent">
+                        <label for="instructor_communicationE">Excellent</label>
+                        <input type="radio" name="communication" id="instructor_communicationG"  value="Instructor Communication Good">
+                        <label for="instructor_communicationG">Good</label>
+                        <input type="radio" name="communication" id="instructor_communicationF"  value="Instructor Communication Fair">
+                        <label for="instructor_communicationF">Fair</label>
+                        <input type="radio" name="communication" id="instructor_communicationNS"  value="Instructor Communication Not Satisfactory">
+                        <label for="instructor_communicationNS">Not Satisfactory</label>
+                    </li>
+                    <li>
+                        <p><b>Overall</b> performance?</p>
+                        <input type="radio" name="performance" id="instructor_performanceE"  value="Instructor Overall Performance Excellent">
+                        <label for="instructor_performanceE">Excellent</label>
+                        <input type="radio" name="performance" id="instructor_performanceG"  value="Instructor Overall Performance Good">
+                        <label for="instructor_performanceG">Good</label>
+                        <input type="radio" name="performance" id="instructor_performanceF"  value="Instructor Overall Performance Fair">
+                        <label for="instructor_performanceF">Fair</label>
+                        <input type="radio" name="performance" id="instructor_performanceNS"  value="Instructor Overall Performance Not Satisfactory">
+                        <label for="instructor_performanceNS">Not Satisfactory</label>
+                    </li>
+                </ol>
+                <h3>Course</h3>
+                <ol start="6">
+                    <li>
+                        <p>How would you rate the <b>course materials</b>?</p>
+                        <input type="radio" name="materials" id="course_materialsE"  value="Course Materials Excellent">
+                        <label for="course_materialsE">Excellent</label>
+                        <input type="radio" name="materials" id="course_materialsG"  value="Course Materials Good">
+                        <label for="course_materialsG">Good</label>
+                        <input type="radio" name="materials" id="course_materialsF"  value="Course Materials Fair">
+                        <label for="course_materialsF">Fair</label>
+                        <input type="radio" name="materials" id="course_materialsNS"  value="Course Materials Not Satisfactory">
+                        <label for="course_expectationsNS">Not Satisfactory</label>
+                    </li>
+                    <li>
+                        <p>How much did this course meet your <b>expectations</b>?</p>
+                        <input type="radio" name="expectations" id="course_expectationsE"  value="Course Expectations Excellent">
+                        <label for="course_expectationsE">Excellent</label>
+                        <input type="radio" name="expectations" id="course_expectationsG"  value="Course Expectations Good">
+                        <label for="course_expectationsG">Good</label>
+                        <input type="radio" name="expectations" id="course_expectationsF"  value="Course Expectations Fair">
+                        <label for="course_expectationsF">Fair</label>
+                        <input type="radio" name="expectations" id="course_expectationsNS"  value="Course Expectations Not Satisfactory">
+                        <label for="course_expectationsNS">Not Satisfactory</label>
+                    </li>
+                    <li>
+                        <p>How would you rate this course(<b>overall</b>)?</p>
+                        <input type="radio" name="overall_rate" id="course_rateE"  value="Course Overall Rate Excellent">
+                        <label for="course_rateE">Excellent</label>
+                        <input type="radio" name="overall_rate" id="course_rateG"  value="Course Overall Rate Good">
+                        <label for="course_rateG">Good</label>
+                        <input type="radio" name="overall_rate" id="course_rateF"  value="Course Overall Rate Fair">
+                        <label for="course_rateF">Fair</label>
+                        <input type="radio" name="overall_rate" id="course_rateNS"  value="Course Overall Rate Not Satisfactory">
+                        <label for="course_rateNS">Not Satisfactory</label>
+                    </li>
+                </ol>
+                <h3>General Information</h3>
+                <ol start="9">
+                    <li>
+                        <p>Was the <b>course outline</b> reviewed/explained at the beginning of your course?</p>
+                        <input type="radio" name="outline_explanation" id="outline_explanationY" value="Course Outline Explanation Yes">
+                        <label for="outline_explanationY">Yes</label>
+                        <input type="radio" name="outline_explanation" id="outline_explanationN" value="Course Outline Explanation No">
+                        <label for="outline_explanationN">No</label>
+                        <input type="radio" name="outline_explanation" id="outline_explanationNS" value="Course Outline Explanation Not Sure">
+                        <label for="outline_explanationNS">Not Sure</label>
+                    </li>
+                    <li>
+                        <p>Would you <b>recommend</b> reviewed/explained at the beginning of your course?</p>
+                        <input type="radio" name="recommend" id="recommendY" value="Recommend Yes">
+                        <label for="recommendY">Yes</label>
+                        <input type="radio" name="recommend" id="recommendN" value="Recommend No">
+                        <label for="recommendN">No</label>
+                        <input type="radio" name="recommend" id="recommendNS" value="Recommend Not Sure">
+                        <label for="recommendNS">Not Sure</label>
+                    </li>
+                </ol>
+                <h3 class="header_other">Any Other Comments</h3>
+                <ol id="list_other" start="11">
+                    <li>
+                        <label for="best_thing">What is the <b>best thing</b> about this course?</label><br>
+                        <textarea name="best_thing" id="best_thing"></textarea>
+                    </li>
+                    <li>
+                        <label for="improve">How could we <b>improve</b> this course?</label><br>
+                        <textarea name="improve" id="improve"></textarea>
+                    </li>
+                    <li>
+                        <label for="other_comments">Other:</label><br>
+                        <textarea name="other_comments" id="other_comments"></textarea>
+                    </li>
+                </ol>
+                <input type="submit" value="Confirm and Submit"><input type="reset" value="Clear">
+                <p class="p_end">Thank you! We pay attention to your feedback!<br>
+                    Web: <a href="https://www.centennialcollege.ca/" target="_blank">https://www.centennialcollege.ca/</a>
+                    Email: <a href="mailto:continuingeducation@centennialcollege.ca" target="_blank">continuingeducation@centennialcollege.ca</a>
+                </p>
+            </form>
+        </div>
+        <footer>
+            <hr>
+            <h6>
+                <span>&copy; Copyright </span><span style="color:rgb(140, 146, 45);">Aiko Bislig - 301435476 - COMP213 - Web Interface Design</span> - Winter 2024 </h6>
+        </footer>
+    </body>
+</html>

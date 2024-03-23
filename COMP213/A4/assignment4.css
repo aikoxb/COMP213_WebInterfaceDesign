@@ -1,0 +1,128 @@
+body {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), #d4df38);
+}
+
+.container {
+    width: 790px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    border: 2px solid rgb(65, 65, 66);
+    padding: 50px;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), #d4df38);
+}
+
+.header_logo {
+    width: 300px;
+    margin-left: -25px;
+    margin-top: -10px;
+}
+
+#header_form {
+    text-align: center;
+    background-color: rgb(65, 65, 66);
+    padding: 10px;
+    color: white;
+}
+
+form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+}
+
+.upper_label {
+    grid-column: 1 / 1;
+    font-weight: bold;
+    text-align: right;
+    margin-right: -25px;
+}
+
+#course_name {
+    grid-column: 2 / 3;
+    width: 140%;
+    margin-left: 32px;
+}
+
+#semester {
+    grid-column: 2 / 3;
+    width: 50%;
+    margin-left: 32px;
+}
+
+#year {
+    grid-column: 2 / 3;
+    width: 20%;
+    margin-left: 32px;
+}
+
+#instructor {
+    grid-column: 2 / 3;
+    width: 140%;
+    margin-left: 32px;
+}
+
+ol {
+    grid-column: 1 / span 3;
+    margin-top: -10px;
+}
+
+h3 {
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(65, 65, 66);
+    padding: 10px;
+    grid-column: 1 / span 3;
+}
+
+p {
+    grid-column: 1 / span 3;
+}
+
+.p_instructor {
+    margin-top: 0px;
+}
+
+.header_other {
+    margin-bottom: 25px;
+}
+
+#list_other li {
+    margin-top: 10px;
+}
+
+textarea {
+    grid-column: 1 / 2;
+    width: 100%;
+    height: 60px;
+    resize: vertical;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 35px;
+    grid-column: 2 / 2;
+    width: 55%;
+    justify-self: center;
+}
+
+input[type="reset"] {
+    grid-column: 2 / 2;
+    width: 30%;
+    justify-self: center;
+}
+
+.p_end {
+    text-align: center;
+    font-style: italic;
+    margin-top: 40px;
+}
+
+footer {
+    margin-top: 70px;
+}
+
+hr {
+    border-style: solid;
+    border-color: rgb(140, 146, 45);
+}

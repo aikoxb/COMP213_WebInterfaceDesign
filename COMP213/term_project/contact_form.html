@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Student Name: Aiko Bislig - Student # 301435476 -->
+    <head>
+        <title>COMP213 - W24 - Web Interface Design - Term Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="term_project.css">
+    </head>
+    <body>
+        <div id="nav_bg">
+            <nav>
+                <img src="images/exp_logo.png" alt="eXp Realty Logo">
+                <ul>
+                <li><a class="home_nav_link" href="home.html">Home</a></li>
+                <li><a class="properties_nav_link" href="available_properties.html">Available Properties</a></li>
+                <li><a class="contact_nav_link" href="contact_form.html">Contact Us</a></li>
+                <li><a class="map_nav_link" href="map_credits.html">Site Map and Credits</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header_bg">
+            <div class="header_container">
+                <header>
+                    <h1>Contact Form</h1>
+                </header>
+            </div>
+        </div>
+        <main>
+            <div class="bg_container2">
+                <div class="contact_form_container">
+                    <form name="contact_form" id="contact_form" method="post" 
+                        action="mailto:manilagoncalves@hotmail.com">
+                        <div class="form_header_container">
+                            <h3>Contact Me</h3>
+                            <hr>
+                        </div>                       
+                        <h4 class="form_section_title">Personal Information</h4>
+                        <p>Fill out your personal information.</p>
+                        <label class="form_label" for="first_name">First Name:</label>
+                        <input class="name_input" type="text" name="first_name" id="first_name" required placeholder="John">
+                        <label class="form_label" for="first_name">Last Name:</label>
+                        <input class="name_input" type="text" name="last_name" id="last_name" required placeholder="Doe"><br>
+                        <label class="form_label" for="phone_number">Phone Number:</label>
+                        <input class="phone_input" type="text" name="phone_number" id="phone_number" required placeholder="000-000-0000"><br>
+                        <label class="form_label" for="email">Email:</label>
+                        <input class="email_input" type="text" name="email" id="email" required placeholder="youremail@email.com">
+                        <h4 class="form_section_title">Property Preferences</h4>
+                        <p>Fill out your preferences for the type of property you're interested in.</p>
+                        <div class="property_type_container">
+                            <p class="property_type_title">Property Type:</p>
+                            <div class="property_type_container2">
+                                <input type="radio" name="property_type" id="property_type_condo"  value="Property Type Condo">
+                                <label for="property_type_condo">Condo</label>
+                                <input type="radio" name="property_type" id="property_type_house"  value="Property Type House">
+                                <label for="property_type_house">House</label>
+                            </div>
+                        </div><br>
+                        <label class="form_label" for="num_bedroom">Number of Bedrooms:</label>
+                        <select class="num_room_input" name="num_bedroom" id="num_bedroom" size="1" required>
+                            <option value="" disabled selected>Select Option</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="More than 10">More than 10</option>
+                        </select>
+                        <label  class="form_label" for="num_bathroom">Number of Bathrooms:</label>
+                        <select class="num_room_input" name="num_bathroom" id="num_bathroom" size="1" required>
+                            <option value="" disabled selected>Select Option</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="More than 10">More than 10</option>
+                        </select><br>
+                        <div class="price_range_container">
+                            <p class="price_range_title">Price Range:</p>
+                            <div class="price_range_container2">
+                                <label class="price_range_label" for="minimum_price">Minimum ($):</label>
+                                <input class="price_range_input" type="text" name="minimum_price" id="minimum_price" required placeholder="000,000,000,000">
+                                <label class="price_range_label" for="maximum_price">Maximum ($):</label>
+                                <input class="price_range_input" type="text" name="maximum_price" id="maximum_price" required placeholder="000,000,000,000"><br>
+                            </div>
+                        </div>
+                        <label class="additional_comments_label" for="additional_comments">Additional Comments:</label><br>
+                        <textarea class="comments_textarea" name="additional_comments" id="additional_comments"></textarea><br>
+                        <div class="button_container">
+                            <input class="submit_button" type="submit" value="Confirm and Submit">
+                            <input class="clear_button" type="reset" value="Clear">
+                        </div>                   
+                        <p class="p_end">Thank you! We'll get back to you in the next business day!</p>
+                    </form>
+                </div>              
+            </div>
+        </main>
+        <footer>
+            <h6>
+                &copy; Copyright Aiko Bislig - 301435476 - COMP213 - Web Interface Design - Winter 2024</h6>
+        </footer>
+    </body>
+</html>

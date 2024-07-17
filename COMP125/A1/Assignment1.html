@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Student Name: Aiko Bislig - Student #: 301435476 -->
+        <title>COMP125 - Client-Side Web Development - Assignment 1</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-align: center;
+                background-color: #232323;
+            }
+
+            table {
+                margin: 20px auto;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 5px solid #232323;
+                padding: 10px;
+                text-align: center;
+            }
+
+            input {
+                margin: 5px;
+                padding: 5px;
+            }
+
+            .container {               
+                background-color: #afafaf;
+                padding: 20px;
+                border-radius: 40px;
+                box-shadow: 0 0 40px rgb(230, 255, 4);
+                display: inline-block;
+                margin-top: 40px;
+            }
+
+            #row_label {
+                margin-left: 22px;
+            }
+
+            #tableContainer {
+                font-family: 'Arial Narrow Bold', sans-serif;
+            }
+
+            button {
+                margin-top: 20px;
+                background-color: rgba(255, 255, 3, 0.792);
+                border: 2px solid #232323;
+                border-radius: 40px;
+                padding: 10px;
+            }
+
+            button:hover {
+                background-color: rgba(255, 175, 3, 0.792);
+                border: 2px solid #464545;
+            }
+
+            button:active {
+                background-color: rgb(255, 137, 3);
+                border: 2px solid #464545;
+            }
+
+            footer {
+                margin-top: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Multiplication Table</h1>
+            <p>Enter the number of columns and rows for the table to generate a table:</p>
+            <label for="numColumn">Number of Columns:</label>
+            <input type="number" id="numColumn" placeholder="0" min="1" max="20"><br>
+            <label id="row_label" for="numRow">Number of Rows:</label>
+            <input type="number" id="numRow" placeholder="0" min="1" max="20"><br>         
+            <button type="button" id="button" onclick="generateTable()">Generate Table</button>
+            <div id="tableContainer"></div>
+        </div>
+        <footer>
+            <hr>
+            <h6>
+                <span style="color:white;">&copy; Copyright </span><span style="color:rgb(173, 119, 234);">Aiko Bislig - 301435476</span>-<span style="color: rgb(255, 106, 0);">COMP125 - Client-Side Web Development</span><span style="color:white;"> - Summer 2024</span></h6>
+        </footer>
+        <script src="Assignment1.js"></script>
+    </body>
+</html>

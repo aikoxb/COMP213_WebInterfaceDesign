@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3d3030;
+    color: #ffffff;
+}
+
+header {
+    background-color: #ff4000;
+}
+
+#headerText {
+    text-transform: uppercase;
+    text-align: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headerText h1 {
+    color: #ffffff;
+}
+
+main {
+    padding-left:100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color:#ff4000;
+    font-size: 30px;
+}
+
+ul {
+    text-align: left;
+}
+
+#overlay-body {
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+#overlay-body img {
+    border: 2px solid #ff4000;
+    min-width: 500px;
+    min-height: 100%;
+    max-width: 90%;
+    max-height: 80vh;
+    margin: 0 auto;
+}
+
+#overlay-body .overlay-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 16px;
+    background-color: #ff4000;
+    color: white;
+    cursor: pointer;
+    border: solid 2px #ffffff;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #722007;
+}
+
+#overlay-body button {
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.favorites-title {
+    margin-top: 50px;
+}
+
+#favorites {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.favorite-item-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    padding: 10px;
+    border: 1px solid #0011ff;
+}
+
+#favorites img {
+    display: inline-block;
+    width: 192px;
+    height: 108px;
+    margin: 5px;
+    border: 2px solid #0011ff;
+}
+
+.remove-button {
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #0011ff;
+    color: #ff9100;
+    border: 2px solid #ff4000;
+}

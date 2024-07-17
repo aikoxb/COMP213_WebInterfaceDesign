@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Student Name: Aiko Bislig - Student #: 301435476 -->
+        <title>COMP125 - Client-Side Web Development - Assignment 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="Assignment3.js" defer></script>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background: #252525;
+                color: rgb(0, 255, 76);                
+            }
+            #headerText {
+                margin-top: 200px;
+                text-transform: uppercase;
+                font-stretch:extra-condensed;
+                text-shadow: 1px 1px 2px red, 0 0 1em rgb(157, 0, 255), 0 0 0.2em rgb(157, 0, 255);
+            }
+            #gameCanvas {
+                margin-top: 20px;
+                border: 2px solid rgb(0, 0, 0);
+                cursor: crosshair;
+                box-shadow: 
+                    1px 1px 2px rgb(157, 0, 255), 
+                    0 0 1em rgb(0, 91, 27), 
+                    0 0 0.2em rgb(0, 255, 76);
+            }
+            .controls {
+                display: flex;
+                justify-content:center;
+                margin-top: 20px;
+            }
+            button {
+                margin: 5px;
+                margin-right: 15px;
+                padding: 10px;
+                background-color: rgb(104, 62, 255);
+                border-radius: 15px;
+                border: 2px solid rgb(0, 255, 76);
+                color: rgb(0, 255, 76);
+                font-stretch:extra-condensed;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-shadow: 1px 1px 2px red, 0 0 1em rgb(157, 0, 255), 0 0 0.2em rgb(157, 0, 255);                
+            }
+            .score-speed {
+            display: flex;
+            justify-content: space-between;
+            width: 170px;
+            margin-top: 20px;
+            font-size: 13px;
+            }     
+            footer {
+                margin-top: 50px;
+            }   
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="headerText">
+                <h1>Bug Smasher</h1>
+            </div>
+        </header>
+        <main>
+            <div class="score-speed">
+                <div id="score">Score: 0</div>
+                <div id="speed">Speed: 1.00x</div>
+            </div>
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            <div class="controls">
+                <button id="resetSpeed">Reset Speed</button>
+                <button id="resetScore">Reset Score</button>
+            </div>            
+        </main>
+        <footer>
+            <hr>
+            <h6 style="margin-left: 20px;">
+                <span style="color:white;">&copy; Copyright </span><span style="color:rgb(104, 62, 255);">Aiko Bislig - 301435476</span> - <span style="color: rgb(255, 64, 0);">COMP125 - Client-Side Web Development</span><span style="color:white;"> - Summer 2024</span>
+            </h6>
+        </footer>
+    </body>
+</html>

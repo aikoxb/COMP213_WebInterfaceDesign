@@ -12,4 +12,4 @@ This repository contains assignments and a term project for the COMP213 (SEC 401
 - [Assignment 4](./A4): School Course Form - [View Website Page](https://aikoxb.github.io/COMP213_WebInterfaceDesign/A4/course_form.html) (Right-click to open in a new tab)
 
 ## Project
-- [Term Project](./term_project): Real Estate Agent's Website - [View Website Page](https://aikoxb.github.io/COMP213_WebInterfaceDesign/term_project/index.html) (Right-click to open in a new tab)
+- [Term Project](./term_project): Real Estate Agent's Website - [View Website Page](https://aikoxb.github.io/COMP213_WebInterfaceDesign/term_project/home.html) (Right-click to open in a new tab)

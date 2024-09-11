@@ -1,0 +1,120 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(62, 54, 70);
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr.dash-border {
+    border-style: dashed;
+    border-color: rgb(199, 176, 243);
+    border-width: 1px;
+}
+
+hr.dash-border-thick {
+    border-style: dashed;
+    border-color: rgb(199, 176, 243);
+    border-width: 3px;
+}
+
+nav {
+    background-color: rgb(199, 176, 243);
+    padding: 2px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.background-img {
+    background-image: url('images/clouds_sky.jpg');
+}
+
+.center-text {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.stickman {
+    height: 120px;
+    width: 100px;
+}
+
+blockquote {
+    margin-left: 80px;
+}
+
+.content-container {
+    background-color: rgb(32, 31, 31);
+}
+
+.spider-background {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('images/spider_walk_small5.gif');
+    background-repeat: repeat-x;
+}
+
+.about-container {
+    background-image: url('images/spider_walking.gif');
+    background-size: cover;
+}
+
+.about-info {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image {
+    margin-left: -30px;
+    width: 200px;
+    height: 140px;
+}
+
+dt {
+    color: rgb(219, 199, 255);
+    padding-bottom: 5px;
+}
+
+dd {
+    padding-bottom: 20px;
+}
+
+.bullet-list {
+    list-style-image: url('images/bullet_point1.gif');
+}
+
+.doodles-image {
+    padding-left: 50px;
+    width: 500px;
+    height: 750px;
+}
+
+footer {
+    background-image: url('images/clouds_sky.jpg');
+    padding-left: 25px;
+    padding-bottom: 20px;
+}

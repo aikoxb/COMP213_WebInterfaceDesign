@@ -71,7 +71,7 @@ min-width: 50px;
     min-width: 1920px;
     width: 100%; 
     height: 100%; 
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url(images/houses_birds_eye.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url(images/landscape_banner.jpg);
     background-size: cover;
     opacity: 0.7; 
     z-index: -1;
